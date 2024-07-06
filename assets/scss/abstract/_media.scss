@@ -1,0 +1,6 @@
+@mixin mq($key) {
+  $size: map-get($grid-breakpoints, $key);
+  @media (min-width: $size) {
+    @content;
+  }
+}

@@ -1,0 +1,53 @@
+//colors
+$color-primary: #326dee !default;
+$color-secondary: #1ac886 !default;
+$color-danger: #d32752 !default;
+$color-gray: #c2c2c2;
+$color-light: #fff !default;
+$color-dark: #000 !default;
+
+$theme-colors: (
+  primary:   $color-primary,
+  secondary: $color-secondary,
+  danger:    $color-danger,
+  gray:      $color-gray,
+  light:     $color-light,
+  dark:      $color-dark,
+);
+
+//font-size
+$fs-base: 1rem;          //16px
+$fs-1: $fs-base * 2;     //32px
+$fs-2: $fs-base * 1.75;  //28px
+$fs-3: $fs-base * 1.5;   //24px
+$fs-4: $fs-base * 1.25;  //20px
+$fs-5: $fs-base;         //16px
+$fs-6: $fs-base * 0.875; //14px
+
+// font-family
+$font-family-base: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+//font-weight
+$font-weight-lighter: lighter;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$font-weight-bolder: bolder;
+
+//light-height
+$lh-sm: 1.25;
+$lh-base: 1.5;
+$lh-lg: 2;
+
+//grid
+$gutter-width: 30px;
+$grid-sum: 12;
+$grid-breakpoints: (
+  '': false,
+  'sm': 576px,
+  'md': 768px,
+  'lg': 992px,
+  'xl': 1200px,
+);
+
+

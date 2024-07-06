@@ -1,0 +1,25 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  font-size: $fs-base;
+  color: $color-dark;
+  font-family: $font-family-base;
+  font-weight: $font-weight-normal;
+  line-height: $lh-base;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
