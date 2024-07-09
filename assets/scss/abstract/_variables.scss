@@ -1,10 +1,10 @@
 //colors
-$color-primary: #326dee !default;
-$color-secondary: #1ac886 !default;
-$color-danger: #d32752 !default;
+$color-primary: #326dee;
+$color-secondary: #1ac886;
+$color-danger: #d32752;
 $color-gray: #c2c2c2;
-$color-light: #fff !default;
-$color-dark: #000 !default;
+$color-light: #fff;
+$color-dark: #000;
 
 $theme-colors: (
   primary:   $color-primary,
@@ -38,6 +38,28 @@ $font-weight-bolder: bolder;
 $lh-sm: 1.25;
 $lh-base: 1.5;
 $lh-lg: 2;
+
+// transition
+$transition-base: all 250ms ease-in-out;
+
+// spacers
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+);
+
+$directions: (
+  '': false,
+  't': top,
+  'b': bottom,
+  's': left,
+  'e': right,
+);
 
 //grid
 $gutter-width: 30px;

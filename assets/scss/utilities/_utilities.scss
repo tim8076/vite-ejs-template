@@ -1,0 +1,59 @@
+.object-fit-cover {
+  object-fit: cover !important;
+}
+
+// colors
+@each $key, $val in $theme-colors {
+  .text-#{$key} {
+    color: $val !important;
+  }
+  .bg-#{$key} {
+    background-color: $val !important;
+  }
+}
+
+// spacing
+@each $gridKey, $gridValue in $grid-breakpoints {
+  @each $key, $val in $spacers {
+    @each $dir, $dirValue in $directions {
+      @if not $gridValue {
+        @if not $dirValue {
+          .m-#{$key} {
+            margin: $val;
+          }
+          .p-#{$key} {
+            padding: $val;
+          }
+        }
+        @else {
+          .m#{$dir}-#{$key} {
+            margin-#{$dirValue}: $val;
+          }
+          .p#{$dir}-#{$key} {
+            padding-#{$dirValue}: $val;
+          }
+        }
+      }
+      @else {
+        @media screen and (min-width: $gridValue) {
+          @if not $dirValue {
+            .m-#{$gridKey}-#{$key} {
+              margin: $val;
+            } 
+            .p-#{$gridKey}-#{$key} {
+              padding: $val;
+            }
+          }
+          @else {
+            .m#{$dir}-#{$gridKey}-#{$key} {
+              margin-#{$dirValue}: $val;
+            }
+            .p#{$dir}-#{$gridKey}-#{$key} {
+              padding-#{$dirValue}: $val;
+            }
+          }
+        }
+      }
+    }
+  }
+}
