@@ -39,6 +39,10 @@
   >.col {
     flex: 1 0 0%;
   }
+  >[class^="col-"] {
+    padding-left: $gutter-width / 2;
+    padding-right: $gutter-width / 2;
+  }
 }
 
 .no-gutters {
@@ -57,8 +61,6 @@
       .col-#{$var} {
         max-width: 100% * ($var / $grid-sum);
         flex: 0 0 (100% * ($var / $grid-sum));
-        padding-left: $gutter-width / 2;
-        padding-right: $gutter-width / 2;
       }
     }
   }
